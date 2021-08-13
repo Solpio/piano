@@ -47,8 +47,9 @@ function clickoutput(e){
 let keys = Array.from(document.querySelectorAll(".key"));
 let keys_black = Array.from(document.querySelectorAll(".key_black"));
 
-keys.forEach(key => key.addEventListener('click', clickoutput));
-keys_black.forEach(key => key.addEventListener('click', clickoutput));
+
+keys.forEach(key => key.addEventListener('mousedown', clickoutput));
+keys_black.forEach(key => key.addEventListener('mousedown', clickoutput));
 
 
 
