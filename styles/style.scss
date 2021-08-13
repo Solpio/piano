@@ -4,7 +4,7 @@
 }
 
 .body{
-    background-color: #555555;
+    background-color: #000000;
 }
 .text{
     margin: 0;
@@ -29,6 +29,9 @@
 
 
     .key{
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
         border: #000000 1px solid;
         background-color: #ffffff;
         width: 42px;
@@ -69,6 +72,25 @@
         transition: All 0.5s;
         transition-timing-function: cubic-bezier(0, 1.21, 0, 1.55);
         
+
+    }
+}
+
+.note_name{
+    display: block;
+    text-align: center;
+    
+    font-size: 18px;
+
+    color: azure;
+    text-orientation:mixed;
+    &--white{
+        display: block;
+        text-align: center;
+        
+        font-size: 18px;
+    
+        text-orientation:mixed;
 
     }
 }

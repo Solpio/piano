@@ -4,7 +4,7 @@
 }
 
 .body {
-  background-color: #555555;
+  background-color: #000000;
 }
 
 .text {
@@ -32,6 +32,15 @@
 }
 
 .octave .key {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border: #000000 1px solid;
   background-color: #ffffff;
   width: 42px;
@@ -78,5 +87,20 @@
   transition: All 0.5s;
   -webkit-transition-timing-function: cubic-bezier(0, 1.21, 0, 1.55);
           transition-timing-function: cubic-bezier(0, 1.21, 0, 1.55);
+}
+
+.note_name {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  color: azure;
+  text-orientation: mixed;
+}
+
+.note_name--white {
+  display: block;
+  text-align: center;
+  font-size: 18px;
+  text-orientation: mixed;
 }
 /*# sourceMappingURL=style.css.map */
