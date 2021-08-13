@@ -37,8 +37,9 @@
         width: 42px;
         height: 171px;
         transition: All 0.5s;
-        
 
+        user-select: none;
+        cursor: default;
         &--big{
             width: 51px;
         }
@@ -50,6 +51,8 @@
             &--middle{
                 margin-left: 6px;
             }
+            user-select: none;
+            cursor: default;
             transition: All 0.5s;
         }
     }
@@ -84,6 +87,8 @@
 
     color: #ffffff;
     text-orientation:mixed;
+    
+
     &--white{
         display: block;
         text-align: center;
@@ -91,6 +96,5 @@
         font-size: 18px;
     
         text-orientation:mixed;
-
     }
 }

@@ -47,6 +47,11 @@
   height: 171px;
   -webkit-transition: All 0.5s;
   transition: All 0.5s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
 }
 
 .octave .key--big {
@@ -57,6 +62,11 @@
   width: 20px;
   height: 119px;
   background-color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: default;
   -webkit-transition: All 0.5s;
   transition: All 0.5s;
 }

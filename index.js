@@ -4,7 +4,6 @@ function randomColor(){
 }
 
 function removeTransition(e) {
-    console.log(e)
     if (e.propertyName !== 'background-color') return;
     e.target.classList.remove('playing');
     e.target.style.backgroundColor = null;
@@ -21,20 +20,40 @@ function output(e){
         note = document.querySelector(`div[data-key="${e.keyCode}"]`);
     }
     if (!audio) return; 
-
+    console.log(audio);
     audio.currentTime = 0;
     audio.play();
-    console.log(note);
     note.classList.add("playing");
 
     note.style.backgroundColor = randomColor();
 
 }
 
+function clickoutput(e){
+    let key = e.target.attributes["data-key"].value;
+    let audio = document.querySelector(`audio[data-key="${key}`)
+    let note = document.querySelector(`div[data-key="${key}"]`);
+    if (!audio) return; 
+    console.log(audio);
+    audio.currentTime = 0;
+    audio.play();
+    note.classList.add("playing");
+
+    note.style.backgroundColor = randomColor();
+}
+
+
+
 let keys = Array.from(document.querySelectorAll(".key"));
 let keys_black = Array.from(document.querySelectorAll(".key_black"));
-console.log(keys);
+
+keys.forEach(key => key.addEventListener('click', clickoutput));
+keys_black.forEach(key => key.addEventListener('click', clickoutput));
+
+
+
 keys.forEach(key => key.addEventListener('transitionend', removeTransition));
 keys_black.forEach(key => key.addEventListener("transitionend", removeTransition))
+
 window.addEventListener("keydown", output);
 
