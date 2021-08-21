@@ -1,6 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 .html {
   margin: 0;
   padding: 0;
+}
+
+h1, h2 {
+  padding: 0;
+  margin: 0;
 }
 
 .body {
@@ -10,10 +16,11 @@
 .text {
   margin: 0;
   padding: 0;
+  font-family: Roboto;
+  font-weight: 400;
+  letter-spacing: 2px;
   font-size: 15px;
   color: #ffffff;
-  margin-left: 720px;
-  margin-top: 300px;
 }
 
 .piano {
@@ -112,5 +119,52 @@
   text-align: center;
   font-size: 18px;
   text-orientation: mixed;
+}
+
+.menu {
+  width: 1670px;
+  margin-left: 100px;
+  margin-top: 320px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid white;
+}
+
+.menu .song_menu {
+  margin-right: 250px;
+}
+
+.menu .song_menu__article {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.menu .song_menu__bar {
+  margin-top: 15px;
+}
+
+.menu .song_menu__bar--item {
+  margin-bottom: 12px;
+  border: 1px solid #ffffff;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.menu .song {
+  min-width: 1050px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 /*# sourceMappingURL=style.css.map */
